@@ -67,7 +67,7 @@ public class PanelBackground extends javax.swing.JPanel {
         
         int width = getWidth();
         int height = getHeight();
-        int header = 200;
+        int header = 170;
         g2.setColor(getBackground());
         g2.fillRoundRect(0, 0, width, height, round, round);
         Area area = new Area(new RoundRectangle2D.Double(0, 0, width, header, round, round));

@@ -1,6 +1,8 @@
 package com.omar.main;
 
+import com.omar.form.Form1;
 import java.awt.Color;
+import java.awt.Component;
 
 /**
  *
@@ -15,8 +17,18 @@ public class Main extends javax.swing.JFrame {
         initComponents();
         setBackground(new Color(0, 0, 0, 0));
         menu.initWinButton(Main.this, panelBackground1);
+        scroll.getViewport().setOpaque(false);
+        scroll.setViewportBorder(null);
+        showForm(new Form1());
     }
 
+    
+    private void showForm(Component com) {
+     body.removeAll();
+     body.add(com);
+     body.revalidate();
+     body.repaint();
+    }
     
     
     @SuppressWarnings("unchecked")
@@ -25,9 +37,18 @@ public class Main extends javax.swing.JFrame {
 
         panelBackground1 = new com.omar.swing.PanelBackground();
         menu = new com.omar.component.Menu();
+        scroll = new javax.swing.JScrollPane();
+        body = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
+
+        scroll.setBorder(null);
+        scroll.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
+        body.setOpaque(false);
+        body.setLayout(new java.awt.BorderLayout());
+        scroll.setViewportView(body);
 
         javax.swing.GroupLayout panelBackground1Layout = new javax.swing.GroupLayout(panelBackground1);
         panelBackground1.setLayout(panelBackground1Layout);
@@ -35,11 +56,17 @@ public class Main extends javax.swing.JFrame {
             panelBackground1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelBackground1Layout.createSequentialGroup()
                 .addComponent(menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 664, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(scroll, javax.swing.GroupLayout.DEFAULT_SIZE, 659, Short.MAX_VALUE)
+                .addContainerGap())
         );
         panelBackground1Layout.setVerticalGroup(
             panelBackground1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, 537, Short.MAX_VALUE)
+            .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, 551, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBackground1Layout.createSequentialGroup()
+                .addGap(55, 55, 55)
+                .addComponent(scroll)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -61,6 +88,13 @@ public class Main extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        
+        
+        // Enable anti-aliased text:
+        System.setProperty("awt.useSystemAAFontSettings","on");
+        
+        
+        
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -93,7 +127,9 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel body;
     private com.omar.component.Menu menu;
     private com.omar.swing.PanelBackground panelBackground1;
+    private javax.swing.JScrollPane scroll;
     // End of variables declaration//GEN-END:variables
 }
