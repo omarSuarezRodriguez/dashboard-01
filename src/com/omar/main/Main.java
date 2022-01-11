@@ -2,6 +2,7 @@ package com.omar.main;
 
 import com.omar.event.EventMenu;
 import com.omar.form.Form1;
+import com.omar.form.SubForm;
 import com.omar.swing.scrollbar.ScrollBarCustom;
 import java.awt.Color;
 import java.awt.Component;
@@ -21,7 +22,11 @@ public class Main extends javax.swing.JFrame {
         EventMenu eventMenu = new EventMenu() {
             @Override
             public void selected(int index) {
-                System.out.println(index);
+                if (index == 0) {
+                    showForm(new Form1());
+                } else {
+                    showForm(new SubForm(index));
+                }
             }
         };
         menu.initWinButton(Main.this, panelBackground1);

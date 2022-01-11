@@ -3,6 +3,7 @@ package com.omar.component;
 import com.omar.event.EventMenu;
 import com.omar.swing.ButtonMenu;
 import com.omar.swing.PanelBackground;
+import com.omar.swing.scrollbar.ScrollBarCustom;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -23,6 +24,9 @@ public class Menu extends javax.swing.JPanel {
     public Menu() {
         initComponents();
         setOpaque(false);
+        scroll.getViewport().setOpaque(false);
+        scroll.setViewportBorder(null);
+        scroll.setVerticalScrollBar(new ScrollBarCustom());
         scroll.getViewport().setOpaque(false);
         scroll.setViewportBorder(null);
         panelMenu.setLayout(new MigLayout("wrap 2, fillx", "[center]0[center]", "[fill, 100]0[fill, 100]"));

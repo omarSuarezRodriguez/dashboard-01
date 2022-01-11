@@ -58,7 +58,7 @@ public class ButtonMenu extends JButton {
         setForeground(new Color(76, 76, 76));
         setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        setCursor(new Cursor(Cursor.HAND_CURSOR));
+//        setCursor(new Cursor(Cursor.HAND_CURSOR));
         addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent me) {

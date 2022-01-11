@@ -48,12 +48,16 @@ public class WinButton extends javax.swing.JPanel {
                 if (fram.getExtendedState() == JFrame.MAXIMIZED_BOTH) {
                     
                     panel.setRound(15);
+                    fram.setVisible(false);
                     fram.setExtendedState(JFrame.NORMAL);
+                    fram.setVisible(true);
                     
                 } else {
                     
                     panel.setRound(0);
+                    fram.setVisible(false);
                     fram.setExtendedState(JFrame.MAXIMIZED_BOTH);
+                    fram.setVisible(true);
                     
                 }
                 
