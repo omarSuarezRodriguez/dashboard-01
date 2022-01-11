@@ -1,6 +1,8 @@
 package com.omar.main;
 
+import com.omar.event.EventMenu;
 import com.omar.form.Form1;
+import com.omar.swing.scrollbar.ScrollBarCustom;
 import java.awt.Color;
 import java.awt.Component;
 
@@ -16,7 +18,15 @@ public class Main extends javax.swing.JFrame {
     public Main() {
         initComponents();
         setBackground(new Color(0, 0, 0, 0));
+        EventMenu eventMenu = new EventMenu() {
+            @Override
+            public void selected(int index) {
+                System.out.println(index);
+            }
+        };
         menu.initWinButton(Main.this, panelBackground1);
+        menu.initMenu(eventMenu);
+        scroll.setVerticalScrollBar(new ScrollBarCustom());
         scroll.getViewport().setOpaque(false);
         scroll.setViewportBorder(null);
         showForm(new Form1());
@@ -56,12 +66,12 @@ public class Main extends javax.swing.JFrame {
             .addGroup(panelBackground1Layout.createSequentialGroup()
                 .addComponent(menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(scroll, javax.swing.GroupLayout.DEFAULT_SIZE, 794, Short.MAX_VALUE)
+                .addComponent(scroll, javax.swing.GroupLayout.DEFAULT_SIZE, 898, Short.MAX_VALUE)
                 .addContainerGap())
         );
         panelBackground1Layout.setVerticalGroup(
             panelBackground1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, 558, Short.MAX_VALUE)
+            .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, 572, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBackground1Layout.createSequentialGroup()
                 .addGap(55, 55, 55)
                 .addComponent(scroll)
