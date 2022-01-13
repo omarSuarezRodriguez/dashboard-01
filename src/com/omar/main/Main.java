@@ -78,7 +78,7 @@ public class Main extends javax.swing.JFrame {
             panelBackground1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, 572, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBackground1Layout.createSequentialGroup()
-                .addGap(55, 55, 55)
+                .addGap(50, 50, 50)
                 .addComponent(scroll)
                 .addContainerGap())
         );
