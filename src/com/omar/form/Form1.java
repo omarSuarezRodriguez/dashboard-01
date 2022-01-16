@@ -20,85 +20,444 @@ public class Form1 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        panelShadow7 = new com.omar.swing.PanelShadow();
+        gaugeChart7 = new com.omar.chart.GaugeChart();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        panelShadow10 = new com.omar.swing.PanelShadow();
+        gaugeChart10 = new com.omar.chart.GaugeChart();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        panelShadow13 = new com.omar.swing.PanelShadow();
+        gaugeChart13 = new com.omar.chart.GaugeChart();
+        jLabel85 = new javax.swing.JLabel();
+        jLabel86 = new javax.swing.JLabel();
+        jLabel87 = new javax.swing.JLabel();
+        jLabel88 = new javax.swing.JLabel();
+        jLabel89 = new javax.swing.JLabel();
+        jLabel90 = new javax.swing.JLabel();
+        jLabel91 = new javax.swing.JLabel();
         panelShadow1 = new com.omar.swing.PanelShadow();
-        gaugeChart1 = new com.omar.chart.GaugeChart();
-        panelShadow3 = new com.omar.swing.PanelShadow();
-        panelShadow4 = new com.omar.swing.PanelShadow();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
-        panelShadow1.setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20));
+        panelShadow7.setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
-        gaugeChart1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        gaugeChart1.setValue(70);
+        gaugeChart7.setColor1(new java.awt.Color(255, 255, 255));
+        gaugeChart7.setColor2(new java.awt.Color(119, 28, 216));
+        gaugeChart7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        gaugeChart7.setValue(50);
+
+        jLabel43.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
+        jLabel43.setForeground(new java.awt.Color(96, 96, 96));
+        jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel43.setText("Total Profit");
+
+        jLabel44.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel44.setForeground(new java.awt.Color(132, 132, 132));
+        jLabel44.setText("September");
+        jLabel44.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+
+        jLabel45.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel45.setForeground(new java.awt.Color(132, 132, 132));
+        jLabel45.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel45.setText("$ 0,150");
+        jLabel45.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+
+        jLabel46.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel46.setForeground(new java.awt.Color(132, 132, 132));
+        jLabel46.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel46.setText("$ 5,205");
+        jLabel46.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+
+        jLabel47.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel47.setForeground(new java.awt.Color(132, 132, 132));
+        jLabel47.setText("October");
+        jLabel47.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+
+        jLabel48.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel48.setForeground(new java.awt.Color(132, 132, 132));
+        jLabel48.setText("November");
+        jLabel48.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+
+        jLabel49.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel49.setForeground(new java.awt.Color(148, 56, 247));
+        jLabel49.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel49.setText("$ 6,700");
+        jLabel49.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+
+        javax.swing.GroupLayout panelShadow7Layout = new javax.swing.GroupLayout(panelShadow7);
+        panelShadow7.setLayout(panelShadow7Layout);
+        panelShadow7Layout.setHorizontalGroup(
+            panelShadow7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelShadow7Layout.createSequentialGroup()
+                .addGroup(panelShadow7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(gaugeChart7, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel43, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE))
+                .addGap(3, 3, 3)
+                .addGroup(panelShadow7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelShadow7Layout.createSequentialGroup()
+                        .addComponent(jLabel44)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                        .addComponent(jLabel45))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelShadow7Layout.createSequentialGroup()
+                        .addComponent(jLabel47)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel46))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelShadow7Layout.createSequentialGroup()
+                        .addComponent(jLabel48)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel49))))
+        );
+        panelShadow7Layout.setVerticalGroup(
+            panelShadow7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelShadow7Layout.createSequentialGroup()
+                .addComponent(jLabel43)
+                .addGroup(panelShadow7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelShadow7Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(gaugeChart7, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelShadow7Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
+                        .addGroup(panelShadow7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel44)
+                            .addComponent(jLabel45))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(panelShadow7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel47)
+                            .addComponent(jLabel46))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(panelShadow7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel48)
+                            .addComponent(jLabel49))
+                        .addGap(20, 20, 20))))
+        );
+
+        panelShadow10.setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20));
+
+        gaugeChart10.setColor1(new java.awt.Color(255, 255, 255));
+        gaugeChart10.setColor2(new java.awt.Color(70, 73, 252));
+        gaugeChart10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        gaugeChart10.setValue(50);
+
+        jLabel64.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
+        jLabel64.setForeground(new java.awt.Color(96, 96, 96));
+        jLabel64.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel64.setText("Total Income");
+
+        jLabel65.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel65.setForeground(new java.awt.Color(132, 132, 132));
+        jLabel65.setText("September");
+        jLabel65.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+
+        jLabel66.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel66.setForeground(new java.awt.Color(132, 132, 132));
+        jLabel66.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel66.setText("$ 0,150");
+        jLabel66.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+
+        jLabel67.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel67.setForeground(new java.awt.Color(132, 132, 132));
+        jLabel67.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel67.setText("$ 5,205");
+        jLabel67.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+
+        jLabel68.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel68.setForeground(new java.awt.Color(132, 132, 132));
+        jLabel68.setText("October");
+        jLabel68.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+
+        jLabel69.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel69.setForeground(new java.awt.Color(132, 132, 132));
+        jLabel69.setText("November");
+        jLabel69.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+
+        jLabel70.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel70.setForeground(new java.awt.Color(80, 117, 252));
+        jLabel70.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel70.setText("$ 6,700");
+        jLabel70.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+
+        javax.swing.GroupLayout panelShadow10Layout = new javax.swing.GroupLayout(panelShadow10);
+        panelShadow10.setLayout(panelShadow10Layout);
+        panelShadow10Layout.setHorizontalGroup(
+            panelShadow10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelShadow10Layout.createSequentialGroup()
+                .addGroup(panelShadow10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(gaugeChart10, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel64, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE))
+                .addGap(3, 3, 3)
+                .addGroup(panelShadow10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelShadow10Layout.createSequentialGroup()
+                        .addComponent(jLabel65)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                        .addComponent(jLabel66))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelShadow10Layout.createSequentialGroup()
+                        .addComponent(jLabel68)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel67))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelShadow10Layout.createSequentialGroup()
+                        .addComponent(jLabel69)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel70))))
+        );
+        panelShadow10Layout.setVerticalGroup(
+            panelShadow10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelShadow10Layout.createSequentialGroup()
+                .addComponent(jLabel64)
+                .addGroup(panelShadow10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelShadow10Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(gaugeChart10, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelShadow10Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
+                        .addGroup(panelShadow10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel65)
+                            .addComponent(jLabel66))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(panelShadow10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel68)
+                            .addComponent(jLabel67))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(panelShadow10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel69)
+                            .addComponent(jLabel70))
+                        .addGap(20, 20, 20))))
+        );
+
+        panelShadow13.setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20));
+
+        gaugeChart13.setColor1(new java.awt.Color(255, 255, 255));
+        gaugeChart13.setColor2(new java.awt.Color(247, 78, 78));
+        gaugeChart13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        gaugeChart13.setValue(50);
+
+        jLabel85.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
+        jLabel85.setForeground(new java.awt.Color(96, 96, 96));
+        jLabel85.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel85.setText("Total Income");
+
+        jLabel86.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel86.setForeground(new java.awt.Color(132, 132, 132));
+        jLabel86.setText("September");
+        jLabel86.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+
+        jLabel87.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel87.setForeground(new java.awt.Color(132, 132, 132));
+        jLabel87.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel87.setText("$ 0,150");
+        jLabel87.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+
+        jLabel88.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel88.setForeground(new java.awt.Color(132, 132, 132));
+        jLabel88.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel88.setText("$ 5,205");
+        jLabel88.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+
+        jLabel89.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel89.setForeground(new java.awt.Color(132, 132, 132));
+        jLabel89.setText("October");
+        jLabel89.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+
+        jLabel90.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel90.setForeground(new java.awt.Color(132, 132, 132));
+        jLabel90.setText("November");
+        jLabel90.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+
+        jLabel91.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel91.setForeground(new java.awt.Color(255, 112, 112));
+        jLabel91.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel91.setText("$ 6,700");
+        jLabel91.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+
+        javax.swing.GroupLayout panelShadow13Layout = new javax.swing.GroupLayout(panelShadow13);
+        panelShadow13.setLayout(panelShadow13Layout);
+        panelShadow13Layout.setHorizontalGroup(
+            panelShadow13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelShadow13Layout.createSequentialGroup()
+                .addGroup(panelShadow13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(gaugeChart13, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel85, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE))
+                .addGap(3, 3, 3)
+                .addGroup(panelShadow13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelShadow13Layout.createSequentialGroup()
+                        .addComponent(jLabel86)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
+                        .addComponent(jLabel87))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelShadow13Layout.createSequentialGroup()
+                        .addComponent(jLabel89)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel88))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelShadow13Layout.createSequentialGroup()
+                        .addComponent(jLabel90)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel91))))
+        );
+        panelShadow13Layout.setVerticalGroup(
+            panelShadow13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelShadow13Layout.createSequentialGroup()
+                .addComponent(jLabel85)
+                .addGroup(panelShadow13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelShadow13Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(gaugeChart13, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelShadow13Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
+                        .addGroup(panelShadow13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel86)
+                            .addComponent(jLabel87))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(panelShadow13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel89)
+                            .addComponent(jLabel88))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(panelShadow13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel90)
+                            .addComponent(jLabel91))
+                        .addGap(20, 20, 20))))
+        );
 
         javax.swing.GroupLayout panelShadow1Layout = new javax.swing.GroupLayout(panelShadow1);
         panelShadow1.setLayout(panelShadow1Layout);
         panelShadow1Layout.setHorizontalGroup(
             panelShadow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelShadow1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(gaugeChart1, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(103, Short.MAX_VALUE))
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         panelShadow1Layout.setVerticalGroup(
             panelShadow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelShadow1Layout.createSequentialGroup()
-                .addComponent(gaugeChart1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGap(0, 264, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout panelShadow3Layout = new javax.swing.GroupLayout(panelShadow3);
-        panelShadow3.setLayout(panelShadow3Layout);
-        panelShadow3Layout.setHorizontalGroup(
-            panelShadow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 228, Short.MAX_VALUE)
-        );
-        panelShadow3Layout.setVerticalGroup(
-            panelShadow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 160, Short.MAX_VALUE)
-        );
+        jLabel1.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(56, 56, 56));
+        jLabel1.setText("Line Chart");
+        jLabel1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 10, 1, 1));
 
-        javax.swing.GroupLayout panelShadow4Layout = new javax.swing.GroupLayout(panelShadow4);
-        panelShadow4.setLayout(panelShadow4Layout);
-        panelShadow4Layout.setHorizontalGroup(
-            panelShadow4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 228, Short.MAX_VALUE)
-        );
-        panelShadow4Layout.setVerticalGroup(
-            panelShadow4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 160, Short.MAX_VALUE)
-        );
+        jLabel2.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(239, 239, 239));
+        jLabel2.setText("Data Report");
+        jLabel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 10, 1, 1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelShadow1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(panelShadow1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panelShadow4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panelShadow3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(panelShadow10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 0, 0)
+                .addComponent(panelShadow7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 0, 0)
+                .addComponent(panelShadow13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(panelShadow3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panelShadow4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panelShadow1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(446, Short.MAX_VALUE))
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(panelShadow7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(panelShadow10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(panelShadow13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(panelShadow1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 312, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.omar.chart.GaugeChart gaugeChart1;
+    private com.omar.chart.GaugeChart gaugeChart10;
+    private com.omar.chart.GaugeChart gaugeChart11;
+    private com.omar.chart.GaugeChart gaugeChart12;
+    private com.omar.chart.GaugeChart gaugeChart13;
+    private com.omar.chart.GaugeChart gaugeChart2;
+    private com.omar.chart.GaugeChart gaugeChart3;
+    private com.omar.chart.GaugeChart gaugeChart5;
+    private com.omar.chart.GaugeChart gaugeChart7;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
+    private javax.swing.JLabel jLabel87;
+    private javax.swing.JLabel jLabel88;
+    private javax.swing.JLabel jLabel89;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel90;
+    private javax.swing.JLabel jLabel91;
     private com.omar.swing.PanelShadow panelShadow1;
+    private com.omar.swing.PanelShadow panelShadow10;
+    private com.omar.swing.PanelShadow panelShadow11;
+    private com.omar.swing.PanelShadow panelShadow12;
+    private com.omar.swing.PanelShadow panelShadow13;
     private com.omar.swing.PanelShadow panelShadow2;
     private com.omar.swing.PanelShadow panelShadow3;
-    private com.omar.swing.PanelShadow panelShadow4;
+    private com.omar.swing.PanelShadow panelShadow5;
+    private com.omar.swing.PanelShadow panelShadow7;
     // End of variables declaration//GEN-END:variables
 }

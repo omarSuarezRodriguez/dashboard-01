@@ -42,7 +42,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <Component id="menu" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
-                  <Component id="scroll" pref="898" max="32767" attributes="0"/>
+                  <Component id="scroll" pref="1031" max="32767" attributes="0"/>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
