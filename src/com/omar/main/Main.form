@@ -43,10 +43,16 @@
                   <Component id="menu" min="-2" pref="149" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="scroll" pref="978" max="32767" attributes="0"/>
-                      <Component id="header" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="scroll" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="header" pref="908" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="winButton2" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -54,8 +60,11 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Component id="menu" pref="603" max="32767" attributes="0"/>
               <Group type="102" attributes="0">
-                  <Component id="header" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="header" min="-2" max="-2" attributes="0"/>
+                      <Component id="winButton2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                   <Component id="scroll" max="32767" attributes="0"/>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
               </Group>
@@ -85,6 +94,8 @@
         </Container>
         <Container class="com.omar.component.Header" name="header">
         </Container>
+        <Component class="com.omar.swing.win_button.WinButton" name="winButton2">
+        </Component>
       </SubComponents>
     </Container>
   </SubComponents>

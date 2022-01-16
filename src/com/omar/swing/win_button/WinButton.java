@@ -27,7 +27,7 @@ public class WinButton extends javax.swing.JPanel {
     
     public void initEvent(JFrame fram, PanelBackground panel) {
         
-        cmdClose.addActionListener(new ActionListener() {
+        cmdClo.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 System.exit(0);
@@ -76,23 +76,26 @@ public class WinButton extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        cmdClose = new com.omar.swing.win_button.Button();
         cmdMi = new com.omar.swing.win_button.Button();
         cmdRe = new com.omar.swing.win_button.Button();
+        cmdClo = new com.omar.swing.win_button.Button();
 
-        cmdClose.setBackground(new java.awt.Color(240, 62, 62));
-        cmdClose.addActionListener(new java.awt.event.ActionListener() {
+        cmdMi.setBackground(new java.awt.Color(226, 224, 70));
+        cmdMi.setToolTipText("Minimize");
+        cmdMi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmdCloseActionPerformed(evt);
+                cmdMiActionPerformed(evt);
             }
         });
 
-        cmdMi.setBackground(new java.awt.Color(226, 224, 70));
-
         cmdRe.setBackground(new java.awt.Color(68, 198, 51));
-        cmdRe.addActionListener(new java.awt.event.ActionListener() {
+        cmdRe.setToolTipText("Maximize");
+
+        cmdClo.setBackground(new java.awt.Color(240, 62, 62));
+        cmdClo.setToolTipText("Close");
+        cmdClo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmdReActionPerformed(evt);
+                cmdCloActionPerformed(evt);
             }
         });
 
@@ -101,37 +104,37 @@ public class WinButton extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(3, 3, 3)
-                .addComponent(cmdClose, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(3, 3, 3)
-                .addComponent(cmdMi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(3, 3, 3)
-                .addComponent(cmdRe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(3, 3, 3))
+                .addContainerGap()
+                .addComponent(cmdMi, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(cmdRe, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(cmdClo, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(9, 9, 9))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(3, 3, 3)
+                .addGap(9, 9, 9)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(cmdRe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cmdMi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cmdClose, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(3, 3, 3))
+                    .addComponent(cmdClo, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cmdRe, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cmdMi, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(7, 7, 7))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void cmdReActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdReActionPerformed
+    private void cmdCloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdCloActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cmdReActionPerformed
+    }//GEN-LAST:event_cmdCloActionPerformed
 
-    private void cmdCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdCloseActionPerformed
+    private void cmdMiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdMiActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cmdCloseActionPerformed
+    }//GEN-LAST:event_cmdMiActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.omar.swing.win_button.Button cmdClose;
+    private com.omar.swing.win_button.Button cmdClo;
     private com.omar.swing.win_button.Button cmdMi;
     private com.omar.swing.win_button.Button cmdRe;
     // End of variables declaration//GEN-END:variables
