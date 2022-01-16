@@ -1,5 +1,10 @@
 package com.omar.component;
 
+import com.omar.event.EventMenu;
+import com.omar.swing.ButtonMenu;
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import net.miginfocom.swing.MigLayout;
 
 /**
@@ -8,14 +13,44 @@ import net.miginfocom.swing.MigLayout;
  */
 public class Header extends javax.swing.JPanel {
 
-    /**
-     * Creates new form Header
-     */
+   
+    private EventMenu event;
+    
+    
+    
     public Header() {
         initComponents();
         setOpaque(false);
         setLayout(new MigLayout("inset 0", "[fill, 70]", "[fill, 40]"));
     }
+    
+    
+    public void init(EventMenu event) {
+        this.event = event;
+        addMenu("Home", 0);
+        addMenu("Profile", 1);
+        addMenu("About", 2);
+    }
+
+
+    private void addMenu(String name, int index) {
+        
+        ButtonMenu menu = new ButtonMenu();
+        menu.setEffectColor(new Color(173, 209, 255));
+        menu.setForeground(new Color(219, 219, 219));
+        menu.setText(name);
+        menu.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                event.selected(index);
+            }
+        });
+        
+        add(menu);
+        
+        
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.

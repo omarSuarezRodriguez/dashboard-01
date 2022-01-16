@@ -19,6 +19,7 @@ public class Main extends javax.swing.JFrame {
     public Main() {
         initComponents();
         setBackground(new Color(0, 0, 0, 0));
+        
         EventMenu eventMenu = new EventMenu() {
             @Override
             public void selected(int index) {
@@ -29,6 +30,16 @@ public class Main extends javax.swing.JFrame {
                 }
             }
         };
+        
+        EventMenu eventHeader = new EventMenu() {
+            @Override
+            public void selected(int index) {
+                System.out.println("Header Index " + index);
+            }
+        };
+        
+        header.init(eventHeader);
+        
         menu.initWinButton(Main.this, panelBackground1);
         menu.initMenu(eventMenu);
         scroll.setVerticalScrollBar(new ScrollBarCustom());
@@ -54,6 +65,7 @@ public class Main extends javax.swing.JFrame {
         menu = new com.omar.component.Menu();
         scroll = new javax.swing.JScrollPane();
         body = new javax.swing.JPanel();
+        header = new com.omar.component.Header();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -71,14 +83,17 @@ public class Main extends javax.swing.JFrame {
             .addGroup(panelBackground1Layout.createSequentialGroup()
                 .addComponent(menu, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(scroll, javax.swing.GroupLayout.DEFAULT_SIZE, 978, Short.MAX_VALUE)
+                .addGroup(panelBackground1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(scroll, javax.swing.GroupLayout.DEFAULT_SIZE, 978, Short.MAX_VALUE)
+                    .addComponent(header, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         panelBackground1Layout.setVerticalGroup(
             panelBackground1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, 597, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBackground1Layout.createSequentialGroup()
-                .addGap(50, 50, 50)
+            .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, 603, Short.MAX_VALUE)
+            .addGroup(panelBackground1Layout.createSequentialGroup()
+                .addComponent(header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(scroll)
                 .addContainerGap())
         );
@@ -142,6 +157,7 @@ public class Main extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel body;
+    private com.omar.component.Header header;
     private com.omar.component.Menu menu;
     private com.omar.swing.PanelBackground panelBackground1;
     private javax.swing.JScrollPane scroll;

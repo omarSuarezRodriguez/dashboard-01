@@ -29,7 +29,7 @@ public class Menu extends javax.swing.JPanel {
         scroll.setVerticalScrollBar(new ScrollBarCustom());
         scroll.getViewport().setOpaque(false);
         scroll.setViewportBorder(null);
-        panelMenu.setLayout(new MigLayout("wrap 1, fillx", "[center]0[center]", "[fill, 75]0[fill, 75]"));
+        panelMenu.setLayout(new MigLayout("wrap 1, fillx", "[center]0[center]", "[fill, 78]0[fill, 78]"));
 //        panelMenu.setLayout(new MigLayout("wrap 1, fillx, debug", "[center]0[center]", "[fill, 73]0[fill, 73]"));
 //        panelMenu.setLayout(new MigLayout("wrap 2, fillx", "[center]0[center]", "[fill, 100]0[fill, 100]"));
 
@@ -47,7 +47,7 @@ public class Menu extends javax.swing.JPanel {
         addMenu("2", "Staff", 1);
         addMenu("3", "Database", 2);
         addMenu("4", "Report", 3);
-        addMenu("5", "Setting", 4);
+        addMenu("5", "Settings", 4);
     }
 
     private void addMenu(String icon, String text, int index) {
@@ -111,7 +111,7 @@ public class Menu extends javax.swing.JPanel {
         scroll.setBorder(null);
         scroll.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
-        panelMenu.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 16, 1, 1));
+        panelMenu.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 16, 1, 1));
         panelMenu.setOpaque(false);
 
         javax.swing.GroupLayout panelMenuLayout = new javax.swing.GroupLayout(panelMenu);
@@ -122,7 +122,7 @@ public class Menu extends javax.swing.JPanel {
         );
         panelMenuLayout.setVerticalGroup(
             panelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 305, Short.MAX_VALUE)
+            .addGap(0, 306, Short.MAX_VALUE)
         );
 
         scroll.setViewportView(panelMenu);
@@ -135,15 +135,14 @@ public class Menu extends javax.swing.JPanel {
                 .addComponent(winButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addComponent(scroll, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(imageAvatar1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addContainerGap())
-                    .addComponent(imageAvatar1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -155,7 +154,7 @@ public class Menu extends javax.swing.JPanel {
                 .addComponent(jLabel1)
                 .addGap(5, 5, 5)
                 .addComponent(jLabel2)
-                .addGap(30, 30, 30)
+                .addGap(28, 28, 28)
                 .addComponent(scroll))
         );
     }// </editor-fold>//GEN-END:initComponents
