@@ -101,7 +101,7 @@ public class GaugeChart extends JComponent {
                 lastAnimate = currentAnimate;
             }
         };
-        animator = new Animator(500, target);
+        animator = new Animator(1000, target);
         animator.setResolution(0);
         animator.setAcceleration(0.5f);
         animator.setDeceleration(0.5f);

@@ -1,5 +1,8 @@
 package com.omar.form;
 
+import com.omar.chart.ModelChart;
+import java.awt.Color;
+
 /**
  *
  * @author Omar
@@ -9,7 +12,48 @@ public class Form1 extends javax.swing.JPanel {
     public Form1() {
         initComponents();
         setOpaque(false);
+        gaugeChart1.setValueWithAnimation(75);
+        gaugeChart7.setValueWithAnimation(90);
+        gaugeChart13.setValueWithAnimation(45);
+        initCharts();
     }
+    
+    
+    
+    private void initCharts() {
+        
+        
+        lineChart.addLegend("Income", new Color(12, 84, 175), new Color(0, 108, 247));
+        lineChart.addLegend("Expense", new Color(54, 4, 143), new Color(104, 49, 200));
+        lineChart.addLegend("Profit", new Color(5, 125, 0), new Color(95, 209, 69));
+        lineChart.addLegend("Cost", new Color(186, 37, 37), new Color(241, 100, 120));
+        lineChart.addData(new ModelChart("January", new double[]{500, 200, 80, 89}));
+        lineChart.addData(new ModelChart("February", new double[]{600, 750, 90, 150}));
+        lineChart.addData(new ModelChart("March", new double[]{200, 350, 460, 900}));
+        lineChart.addData(new ModelChart("April", new double[]{480, 150, 750, 700}));
+        lineChart.addData(new ModelChart("May", new double[]{350, 540, 300, 150}));
+        lineChart.addData(new ModelChart("June", new double[]{190, 280, 81, 200}));
+        lineChart.start();
+        
+        barChart.addLegend("Income", new Color(12, 84, 175), new Color(0, 108, 247));
+        barChart.addLegend("Expense", new Color(54, 4, 143), new Color(104, 49, 200));
+        barChart.addLegend("Profit", new Color(5, 125, 0), new Color(95, 209, 69));
+        barChart.addLegend("Cost", new Color(186, 37, 37), new Color(241, 100, 120));
+        barChart.addData(new ModelChart("January", new double[]{500, 200, 80, 89}));
+        barChart.addData(new ModelChart("February", new double[]{600, 750, 90, 150}));
+        barChart.addData(new ModelChart("March", new double[]{200, 350, 460, 900}));
+        barChart.addData(new ModelChart("April", new double[]{480, 150, 750, 700}));
+        barChart.addData(new ModelChart("May", new double[]{350, 540, 300, 150}));
+        barChart.addData(new ModelChart("June", new double[]{190, 280, 81, 200}));
+        barChart.start();
+        
+        
+        
+        
+        
+        
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -30,7 +74,7 @@ public class Form1 extends javax.swing.JPanel {
         jLabel48 = new javax.swing.JLabel();
         jLabel49 = new javax.swing.JLabel();
         panelShadow10 = new com.omar.swing.PanelShadow();
-        gaugeChart10 = new com.omar.chart.GaugeChart();
+        gaugeChart1 = new com.omar.chart.GaugeChart();
         jLabel64 = new javax.swing.JLabel();
         jLabel65 = new javax.swing.JLabel();
         jLabel66 = new javax.swing.JLabel();
@@ -48,15 +92,18 @@ public class Form1 extends javax.swing.JPanel {
         jLabel90 = new javax.swing.JLabel();
         jLabel91 = new javax.swing.JLabel();
         panelShadow1 = new com.omar.swing.PanelShadow();
+        lineChart = new com.omar.chart.LineChart();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        panelShadow4 = new com.omar.swing.PanelShadow();
+        barChart = new com.omar.chart.Chart();
 
         panelShadow7.setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
         gaugeChart7.setColor1(new java.awt.Color(255, 255, 255));
         gaugeChart7.setColor2(new java.awt.Color(119, 28, 216));
         gaugeChart7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        gaugeChart7.setValue(50);
 
         jLabel43.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(96, 96, 96));
@@ -145,10 +192,9 @@ public class Form1 extends javax.swing.JPanel {
 
         panelShadow10.setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
-        gaugeChart10.setColor1(new java.awt.Color(255, 255, 255));
-        gaugeChart10.setColor2(new java.awt.Color(70, 73, 252));
-        gaugeChart10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        gaugeChart10.setValue(50);
+        gaugeChart1.setColor1(new java.awt.Color(255, 255, 255));
+        gaugeChart1.setColor2(new java.awt.Color(70, 73, 252));
+        gaugeChart1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
 
         jLabel64.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
         jLabel64.setForeground(new java.awt.Color(96, 96, 96));
@@ -194,7 +240,7 @@ public class Form1 extends javax.swing.JPanel {
             panelShadow10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelShadow10Layout.createSequentialGroup()
                 .addGroup(panelShadow10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(gaugeChart10, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(gaugeChart1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(jLabel64, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE))
                 .addGap(3, 3, 3)
                 .addGroup(panelShadow10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -218,7 +264,7 @@ public class Form1 extends javax.swing.JPanel {
                 .addGroup(panelShadow10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelShadow10Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(gaugeChart10, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                        .addComponent(gaugeChart1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelShadow10Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
                         .addGroup(panelShadow10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -240,7 +286,6 @@ public class Form1 extends javax.swing.JPanel {
         gaugeChart13.setColor1(new java.awt.Color(255, 255, 255));
         gaugeChart13.setColor2(new java.awt.Color(247, 78, 78));
         gaugeChart13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        gaugeChart13.setValue(50);
 
         jLabel85.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
         jLabel85.setForeground(new java.awt.Color(96, 96, 96));
@@ -327,15 +372,17 @@ public class Form1 extends javax.swing.JPanel {
                         .addGap(20, 20, 20))))
         );
 
+        panelShadow1.setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20));
+
         javax.swing.GroupLayout panelShadow1Layout = new javax.swing.GroupLayout(panelShadow1);
         panelShadow1.setLayout(panelShadow1Layout);
         panelShadow1Layout.setHorizontalGroup(
             panelShadow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addComponent(lineChart, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         panelShadow1Layout.setVerticalGroup(
             panelShadow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 264, Short.MAX_VALUE)
+            .addComponent(lineChart, javax.swing.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
         );
 
         jLabel1.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
@@ -347,6 +394,24 @@ public class Form1 extends javax.swing.JPanel {
         jLabel2.setForeground(new java.awt.Color(239, 239, 239));
         jLabel2.setText("Data Report");
         jLabel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 10, 1, 1));
+
+        jLabel3.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(56, 56, 56));
+        jLabel3.setText("Bar Chart");
+        jLabel3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 10, 1, 1));
+
+        panelShadow4.setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20));
+
+        javax.swing.GroupLayout panelShadow4Layout = new javax.swing.GroupLayout(panelShadow4);
+        panelShadow4.setLayout(panelShadow4Layout);
+        panelShadow4Layout.setHorizontalGroup(
+            panelShadow4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(barChart, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        panelShadow4Layout.setVerticalGroup(
+            panelShadow4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(barChart, javax.swing.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -364,6 +429,11 @@ public class Form1 extends javax.swing.JPanel {
                     .addComponent(jLabel2)
                     .addComponent(jLabel1))
                 .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel3)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(panelShadow4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -374,45 +444,27 @@ public class Form1 extends javax.swing.JPanel {
                     .addComponent(panelShadow7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(panelShadow10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(panelShadow13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(panelShadow1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 312, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(panelShadow4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.omar.chart.GaugeChart gaugeChart10;
-    private com.omar.chart.GaugeChart gaugeChart11;
-    private com.omar.chart.GaugeChart gaugeChart12;
+    private com.omar.chart.Chart barChart;
+    private com.omar.chart.GaugeChart gaugeChart1;
     private com.omar.chart.GaugeChart gaugeChart13;
-    private com.omar.chart.GaugeChart gaugeChart2;
-    private com.omar.chart.GaugeChart gaugeChart3;
-    private com.omar.chart.GaugeChart gaugeChart5;
     private com.omar.chart.GaugeChart gaugeChart7;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
@@ -427,37 +479,18 @@ public class Form1 extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel70;
-    private javax.swing.JLabel jLabel71;
-    private javax.swing.JLabel jLabel72;
-    private javax.swing.JLabel jLabel73;
-    private javax.swing.JLabel jLabel74;
-    private javax.swing.JLabel jLabel75;
-    private javax.swing.JLabel jLabel76;
-    private javax.swing.JLabel jLabel77;
-    private javax.swing.JLabel jLabel78;
-    private javax.swing.JLabel jLabel79;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel80;
-    private javax.swing.JLabel jLabel81;
-    private javax.swing.JLabel jLabel82;
-    private javax.swing.JLabel jLabel83;
-    private javax.swing.JLabel jLabel84;
     private javax.swing.JLabel jLabel85;
     private javax.swing.JLabel jLabel86;
     private javax.swing.JLabel jLabel87;
     private javax.swing.JLabel jLabel88;
     private javax.swing.JLabel jLabel89;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel90;
     private javax.swing.JLabel jLabel91;
+    private com.omar.chart.LineChart lineChart;
     private com.omar.swing.PanelShadow panelShadow1;
     private com.omar.swing.PanelShadow panelShadow10;
-    private com.omar.swing.PanelShadow panelShadow11;
-    private com.omar.swing.PanelShadow panelShadow12;
     private com.omar.swing.PanelShadow panelShadow13;
-    private com.omar.swing.PanelShadow panelShadow2;
-    private com.omar.swing.PanelShadow panelShadow3;
-    private com.omar.swing.PanelShadow panelShadow5;
+    private com.omar.swing.PanelShadow panelShadow4;
     private com.omar.swing.PanelShadow panelShadow7;
     // End of variables declaration//GEN-END:variables
 }
