@@ -11,7 +11,7 @@ import javax.swing.JFrame;
 
 /**
  *
- * @author Omar
+ * @author Omar S
  */
 public class Main extends javax.swing.JFrame {
 
